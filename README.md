@@ -1,9 +1,6 @@
-
-
 # Ansible provisioning out of a docker container
 
 `docker pull madhub/ansible_playbook`
-
 
 ## Examples
 
