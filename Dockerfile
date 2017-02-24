@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine:3.3
+FROM gliderlabs/alpine:3.4
 MAINTAINER Franz Mathauser <franz.mathauser@gmail.com>
 
 RUN \
@@ -40,4 +40,3 @@ ENV PATH /ansible/bin:$PATH
 ENV PYTHONPATH /ansible/lib
 
 ENTRYPOINT ["ansible-playbook"]
-
