@@ -15,8 +15,9 @@ RUN \
     py-pip \
     py-setuptools \
     py-yaml \
+    docker-py \
     tar && \
-  pip install --upgrade pip python-keyczar docker-py && \
+  pip install --upgrade pip python-keyczar && \
   rm -rf /var/cache/apk/*
 
 RUN mkdir /etc/ansible/ /ansible
