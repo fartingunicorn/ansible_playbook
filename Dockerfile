@@ -16,7 +16,6 @@ RUN \
     py-setuptools \
     py-yaml \
     tar && \
-  pip install docker && \
   pip install --upgrade pip python-keyczar && \
   rm -rf /var/cache/apk/*
 
@@ -25,7 +24,7 @@ RUN echo "[local]" >> /etc/ansible/hosts && \
     echo "localhost" >> /etc/ansible/hosts
 
 RUN \
-  curl -fsSL http://releases.ansible.com/ansible/ansible-2.2.1.0.tar.gz -o ansible.tar.gz && \
+  curl -fsSL http://releases.ansible.com/ansible/ansible-2.2.2.0-0.1.rc1.tar.gz -o ansible.tar.gz && \
   tar -xzf ansible.tar.gz -C ansible --strip-components 1 && \
   rm -fr ansible.tar.gz /ansible/docs /ansible/examples /ansible/packaging
 
