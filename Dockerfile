@@ -15,8 +15,8 @@ RUN \
     py-pip \
     py-setuptools \
     py-yaml \
-    docker-py \
     tar && \
+  pip install docker && \
   pip install --upgrade pip python-keyczar && \
   rm -rf /var/cache/apk/*
 
